@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Trails Adventure - Web Design Pitch</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --accent-color: #1e90ff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #f4f4f4;
+        }
+
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            border-radius: 16px;
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .card-hover:hover {
+            transform: scale(1.035);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .svg-icon {
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+    <div class="w-full max-w-4xl glass-morphism p-6 md:p-12 rounded-3xl shadow-2xl">
+        <div
+            class="flex flex-col md:flex-row items-center mb-10 space-y-4 md:space-y-0 md:space-x-6 text-center md:text-left">
+            <div class="flex flex-col items-center md:flex-row md:space-x-6 w-full">
+                <div
+                    class="w-24 h-24 mb-4 md:mb-0 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center svg-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1.412 1.412A2 2 0 0014.914 5H21v11h-4m-7 0h7m-7 0l3-3 3 3m-3-3v4" />
+                    </svg>
+                </div>
+                <h1
+                    class="text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
+                    Wild Trails Adventure
+                </h1>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="card-hover glass-morphism p-6 rounded-2xl border border-white border-opacity-20">
+                <h2 class="text-2xl font-bold mb-6 text-green-400">Project Investment</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-white opacity-80">Figma Design</span>
+                        <span class="font-bold text-green-400">₹10,000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-white opacity-80">Frontend Dev</span>
+                        <span class="font-bold text-green-400">₹15,000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-white opacity-80">Backend Dev</span>
+                        <span class="font-bold text-green-400">₹15,000</span>
+                    </div>
+                    <div class="border-t border-white border-opacity-20 pt-4 mt-4 text-center">
+                        <span class="text-xl font-bold text-blue-400">Total: ₹40,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-hover glass-morphism p-6 rounded-2xl border border-white border-opacity-20">
+                <h2 class="text-2xl font-bold mb-6 text-blue-400">Project Timeline</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-white opacity-80">Project Start</span>
+                        <span class="font-bold text-blue-400">Dec 15, 2024</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-white opacity-80">Project End</span>
+                        <span class="font-bold text-blue-400">Jan 15, 2025</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-white opacity-80">Duration</span>
+                        <span class="font-bold text-blue-400">1 Month</span>
+                    </div>
+                    <div class="border-t border-white border-opacity-20 pt-4 mt-4 text-center">
+                        <span class="text-xl font-bold text-green-400">Swift Execution</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <button
+                class="bg-gradient-to-r from-green-400 to-blue-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:from-blue-500 hover:to-green-400 transition-all duration-300 transform hover:scale-105 hover:rotate-2 shadow-2xl">
+                Launch Our Adventure
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
